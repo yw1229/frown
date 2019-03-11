@@ -27,35 +27,35 @@ root = E
 
 
 # 前序遍历
-# def pre_order(root):
-#     if root:
-#         print (root.data,end='')
-#         pre_order(root.left_child)
-#         pre_order(root.right_child)
-#
-#
-# pre_order(root)
+def pre_order(root):
+    if root:
+        print (root.data,end='')
+        pre_order(root.left_child)
+        pre_order(root.right_child)
+
+
+pre_order(root)
 # 中序遍历
-# def in_order(root):
-#     if root:
-#         in_order(root.left_child)
-#         print (root.data, end='')
-#         in_order(root.right_child)
-#
-#
-# in_order(root)
-#
-#
+def in_order(root):
+    if root:
+        in_order(root.left_child)
+        print (root.data, end='')
+        in_order(root.right_child)
+
+
+in_order(root)
+
+
 # 后序遍历
-# def post_order(root):
-#     if root:
-#         post_order(root.left_child)
-#
-#         post_order(root.right_child)
-#         print (root.data, end='')
+def post_order(root):
+    if root:
+        post_order(root.left_child)
+
+        post_order(root.right_child)
+        print (root.data, end='')
 
 
-# in_order(root)
+in_order(root)
 # 层次遍历
 def level_order(root):
     q = deque()
